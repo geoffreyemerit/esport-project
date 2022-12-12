@@ -1,0 +1,97 @@
+.page3 {
+  background-color: #333333;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page3__nickname {
+  text-transform: uppercase;
+  color: #333333;
+  text-shadow: -2px -2px 8px black, 6px 6px 12px #1e1e1e;
+  text-align: center;
+  font-weight: 700;
+  font-size: 80px;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.page3__imgDesc {
+  display: flex;
+  width: 90vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page3__imgDesc--img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 180px;
+  border: 5px solid #333333;
+  box-shadow: -10px -10px 20px #3c3c3c, 10px 10px 20px #1e1e1e,
+    inset -4px -4px 8px rgba(77, 77, 77, 0.25), inset 4px 4px 8px #1e1e1e;
+}
+
+.page3__imgDesc__desc {
+  display: flex;
+  flex-direction: column;
+  background: #333333;
+  box-shadow: -10px -10px 20px #3c3c3c, 10px 10px 20px #1e1e1e,
+    inset -4px -4px 8px rgba(77, 77, 77, 0.25), inset 4px 4px 8px #1e1e1e;
+  border-radius: 32px;
+  padding: 20px;
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+.page3__imgDesc__desc--input {
+  background: #333333;
+  box-shadow: -10px -10px 20px #3c3c3c, 10px 10px 20px #1e1e1e,
+    inset -4px -4px 8px rgba(77, 77, 77, 0.25), inset 4px 4px 8px #1e1e1e;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+  border: 0px;
+  font-weight: 100;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #838383;
+  padding-left: 10px;
+}
+.page3__imgDesc__desc--label {
+  align-self: flex-start;
+  margin-left: 20px;
+  color: whitesmoke;
+}
+
+.page3__imgDesc__desc__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.page3__imgDesc__desc__buttons--button {
+  height: 30px;
+  width: 80px;
+  align-self: center;
+  background-color: #333333;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: all 0.14s ease-out;
+}
+.page3__imgDesc__desc__buttons--button:hover {
+  background-color: #333333;
+  box-shadow: 0.25rem 0.25rem 0 0 black;
+  border: 2px solid black;
+  transform: translate(-0.25rem, -0.25rem);
+}

@@ -1,0 +1,89 @@
+<div class="page3">
+  <h1 class="page3__nickname">{{ person.nickname }}</h1>
+  <div class="page3__imgDesc">
+    <img
+      class="page3__imgDesc--img"
+      [src]="
+        person.photo
+          ? person.photo
+          : 'https://loremflickr.com/320/240/student?random'
+      "
+      [style]="person.id == 7 ? 'transform:rotate(270deg)' : ''"
+      alt="{{ person.nickname }}"
+    />
+    <form class="page3__imgDesc__desc" [formGroup]="personForm">
+      <label for="firstname" class="page3__imgDesc__desc--label"
+        >Firstname :
+      </label>
+      <input
+        type="text"
+        name="firstname"
+        formControlName="firstname"
+        placeholder="{{ person.firstname }}"
+        class="page3__imgDesc__desc--input"
+      />
+      <label for="lastname" class="page3__imgDesc__desc--label"
+        >Lastname :
+      </label>
+      <input
+        type="text"
+        name="lastname"
+        formControlName="lastname"
+        placeholder="{{ person.lastname }}"
+        class="page3__imgDesc__desc--input"
+      />
+      <!-- test -->
+      <label for="nickname" class="page3__imgDesc__desc--label"
+        >Nickname :
+      </label>
+      <input
+        type="text"
+        name="nickname"
+        formControlName="nickname"
+        placeholder="{{ person.nickname }}"
+        class="page3__imgDesc__desc--input"
+      />
+      <label for="role" class="page3__imgDesc__desc--label">Role : </label>
+      <input
+        type="text"
+        name="role"
+        formControlName="role"
+        placeholder="{{ person.role }}"
+        class="page3__imgDesc__desc--input"
+      />
+      <label for="country" class="page3__imgDesc__desc--label"
+        >Country :
+      </label>
+      <input
+        type="text"
+        name="country"
+        formControlName="country"
+        placeholder="{{ person.country }}"
+        class="page3__imgDesc__desc--input"
+      />
+      <div class="page3__imgDesc__desc__buttons">
+        <button
+          type="submit"
+          (click)="showMe()"
+          class="page3__imgDesc__desc__buttons--button"
+        >
+          Save
+        </button>
+        <button
+          href="#"
+          routerLink="../.."
+          class="page3__imgDesc__desc__buttons--button"
+        >
+          Back
+        </button>
+        <button
+          href="#"
+          [routerLink]="'/'"
+          class="page3__imgDesc__desc__buttons--button"
+        >
+          Home
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

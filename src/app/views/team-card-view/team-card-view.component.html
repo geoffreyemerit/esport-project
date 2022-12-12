@@ -1,0 +1,40 @@
+<div class="deco__card">
+  <div class="card">
+    <img
+      class="card__imgGame"
+      [src]="
+        team.game?.img
+          ? team.game?.img
+          : 'https://loremflickr.com/320/240/student?random'
+      "
+      alt="{{ team.game?.name }}"
+    />
+    <div class="card__textContent">
+      <img
+        class="card__textContent__logo"
+        [src]="
+          team.logo
+            ? team.logo
+            : 'https://loremflickr.com/320/240/student?random'
+        "
+        alt="{{ team.team }}"
+      />
+
+      <div class="card__textContent__desc">
+        <h1
+          *ngIf="team"
+          href="#"
+          [routerLink]="'/team/' + team.id"
+          class="card__textContent__desc__title"
+        >
+          {{ team.team }}
+        </h1>
+        <p class="card__textContent__desc__game">{{ team.game?.name }}</p>
+        <p class="card__textContent__desc">
+          Players : {{ team.players?.length }} / {{ team.maxplayers }}
+        </p>
+        <p class="card__textContent__desc">Staff : {{ team.staff?.length }}</p>
+      </div>
+    </div>
+  </div>
+</div>
