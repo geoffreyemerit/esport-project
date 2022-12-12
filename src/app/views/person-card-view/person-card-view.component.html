@@ -1,0 +1,30 @@
+<div class="deco__cardPerson">
+  <div class="cardPerson">
+    <h1 class="cardPerson--role">{{ person?.role }}</h1>
+    <img
+      class="cardPerson--img"
+      [src]="
+        person?.photo
+          ? person?.photo
+          : 'https://loremflickr.com/320/240/student?random'
+      "
+      [style]="person?.id == 7 ? 'transform:rotate(270deg)' : ''"
+      alt="{{ person?.firstname }}"
+    />
+    <h2 *ngIf="person?.firstname !== person?.lastname" class="cardPerson--name">
+      {{ person?.firstname }} {{ person?.lastname }}
+    </h2>
+    <h2 *ngIf="person?.firstname === person?.lastname" class="cardPerson--name">
+      {{ person?.firstname }}
+    </h2>
+    <h3
+      *ngIf="person"
+      href="#"
+      [routerLink]="link && link + person.id"
+      class="cardPerson--nickname"
+    >
+      {{ person.nickname }}
+    </h3>
+    <h4 class="cardPerson--country">{{ person?.country }}</h4>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+.teamsList__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,122 @@
+.page2 {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page2__nameTeamSelected {
+  text-transform: uppercase;
+  color: #333333;
+  text-shadow: -2px -2px 8px black, 6px 6px 12px #1e1e1e;
+  text-align: center;
+  font-weight: 700;
+  font-size: 100px;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.page2__description {
+  display: flex;
+  width: 90vw;
+  height: 350px;
+  border-radius: 40px;
+  background-color: #333333;
+  box-shadow: -10px -10px 20px #3c3c3c, 10px 10px 20px #1e1e1e,
+    inset -4px -4px 8px rgba(77, 77, 77, 0.25), inset 4px 4px 8px #1e1e1e;
+}
+
+.page2__description--img {
+  width: 40%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.page2__description__right {
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid black;
+  width: 90%;
+}
+
+.page2__description__right--banner {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0 40px 0 0;
+}
+
+.page2__description__right__game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.page2__description__right__game__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2__description__right__game__container--logo {
+  border-radius: 90px;
+  width: 100px;
+}
+
+.page2__description__right__game__container--title {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.page2__description__right__game--back {
+  height: 30px;
+  width: 100px;
+  align-self: center;
+  background-color: #333333;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: all 0.14s ease-out;
+}
+.page2__description__right__game--back:hover {
+  background-color: #333333;
+  box-shadow: 0.25rem 0.25rem 0 0 black;
+  border: 2px solid black;
+  transform: translate(-0.25rem, -0.25rem);
+}
+
+.page2__description__right--desc {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.page2__member {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-bottom: 20px;
+}
+
+.page2__member__subtitle {
+  text-transform: uppercase;
+  color: #333333;
+  text-shadow: -2px -2px 8px black, 6px 6px 12px #1e1e1e;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}

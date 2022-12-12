@@ -1,0 +1,69 @@
+<div class="page2">
+  <h1 class="page2__nameTeamSelected">{{ team?.team }}</h1>
+
+  <div class="page2__description">
+    <img
+      class="page2__description--img"
+      [src]="
+        team?.logo
+          ? team?.logo
+          : 'https://loremflickr.com/320/240/student?random'
+      "
+      alt="{{ team?.team }}"
+    />
+
+    <div class="page2__description__right">
+      <img
+        class="page2__description__right--banner"
+        [src]="
+          team?.game?.bannerimg
+            ? team?.game?.bannerimg
+            : 'https://loremflickr.com/320/240/student?random'
+        "
+        alt="{{ team?.game?.name }}"
+      />
+      <div class="page2__description__right__game">
+        <div class="page2__description__right__game__container">
+          <img
+            class="page2__description__right__game__container--logo"
+            [src]="
+              team?.game?.img
+                ? team?.game?.img
+                : 'https://loremflickr.com/320/240/student?random'
+            "
+            alt="{{ team?.game?.name }}"
+          />
+          <p class="page2__description__right__game__container--title">
+            {{ team?.game?.name }}
+          </p>
+        </div>
+        <button
+          href="#"
+          [routerLink]="'/'"
+          class="page2__description__right__game--back"
+        >
+          HOME
+        </button>
+      </div>
+      <p class="page2__description__right--desc">
+        Pegi : {{ team?.game?.pegi }}, Year :
+        {{ team?.game?.year }}
+      </p>
+    </div>
+  </div>
+
+  <div class="page2__member">
+    <h2 class="page2__member__subtitle">Staff</h2>
+    <app-persons-list-view
+      [persons]="team?.staff"
+      [link]="'staff/'"
+      class="page2__member__list"
+    ></app-persons-list-view>
+    <h2 class="page2__member__subtitle">Players</h2>
+    <app-persons-list-view
+      [persons]="team?.players"
+      [link]="'players/'"
+      class="page2__member__list"
+    ></app-persons-list-view>
+  </div>
+</div>

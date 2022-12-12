@@ -1,0 +1,13 @@
+<!--Condition if: s'il y a des teams -->
+<div *ngIf="teams" class="teamsList__cards">
+  <!--Boucle For: Pour chaque item de mes teams -->
+  <div *ngFor="let item of teams">
+    <ng-container
+      *ngTemplateOutlet="cardTeam; context: { myteam: item }"
+    ></ng-container>
+  </div>
+</div>
+
+<ng-template #cardTeam let-team="myteam">
+  <app-team-card-view [team]="team"></app-team-card-view>
+</ng-template>

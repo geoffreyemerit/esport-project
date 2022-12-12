@@ -1,0 +1,66 @@
+.deco__cardPerson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  border-radius: 40px;
+  height: 345px;
+  background: #333333;
+  box-shadow: -10px -10px 20px #3c3c3c, 10px 10px 20px #1e1e1e,
+    inset -4px -4px 8px rgba(77, 77, 77, 0.25), inset 4px 4px 8px #1e1e1e;
+}
+
+.cardPerson {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 300px;
+  padding: 10px;
+  background: #333333;
+  color: #838383;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: -10px -10px 20px #3c3c3c, 10px 10px 20px #1e1e1e,
+    inset -4px -4px 8px rgba(77, 77, 77, 0.25), inset 4px 4px 8px #1e1e1e;
+}
+
+.cardPerson--role {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 15px;
+  padding: 5px;
+}
+
+.cardPerson--img {
+  height: 130px;
+  width: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cardPerson--name {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+.cardPerson--nickname {
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.14s ease-out;
+}
+
+.cardPerson--nickname:hover {
+  color: black;
+  font-size: 26px;
+}
+
+.cardPerson--country {
+  font-style: italic;
+  font-weight: 200;
+}
